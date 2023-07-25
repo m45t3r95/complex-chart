@@ -1,0 +1,13 @@
+<div>
+  <div echarts [options]="chartOption" class="demo-chart"></div>
+  <div style="display: flex">
+    <table *ngFor="let x of multi">
+      <tr>
+        <td *ngFor="let y of x['data']">{{y['name']}}</td>
+      </tr>
+      <tr>
+        <td colspan="5">{{x['name']}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
